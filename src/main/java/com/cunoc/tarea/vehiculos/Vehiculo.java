@@ -29,13 +29,13 @@ public abstract class Vehiculo implements Giro{
 
     @Override
     public void girarDerecha() {
-        System.out.println(modelo + " ha girado a la derecha");
+        System.out.println(this + " ha girado a la derecha");
         
     }
 
     @Override
     public void girarIzquierda() {
-        System.out.println(modelo + " ha girado a la izquierda");
+        System.out.println(this + " ha girado a la izquierda");
         
     }
 
