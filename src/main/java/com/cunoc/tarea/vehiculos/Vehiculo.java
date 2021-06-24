@@ -5,6 +5,7 @@ import com.cunoc.tarea.movimiento_vehiculos.Giro;
 import com.cunoc.tarea.principal.ToolMR;
 
 public abstract class Vehiculo implements Giro{
+    private int id;
     private String modelo;
     private Combustible combustible;
     private double cantGasofa;
@@ -19,6 +20,7 @@ public abstract class Vehiculo implements Giro{
         this.cantPasajeros = ToolMR.aleatorio(1, 5);
         this.velocidadMax = ToolMR.aleatorio(40, 80);
         this.aceleracionBase = ToolMR.aleatorio(0, 100);
+        this.id = ToolMR.aleatorio(10, 99);
     }
 
     public abstract void acelerar();
@@ -39,7 +41,7 @@ public abstract class Vehiculo implements Giro{
 
     @Override
     public String toString() {
-        return modelo;
+        return modelo + id;
     }
 
     public String getModelo() {
