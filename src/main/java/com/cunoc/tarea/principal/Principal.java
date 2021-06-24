@@ -82,9 +82,9 @@ public class Principal {
         if (vehiculo instanceof VCamioneta) {
             tipo = vehiculo + " es una camioneta";
         } else if (vehiculo instanceof VCarga) {
-            tipo = vehiculo + " es un vehiculo de carreras";
-        } else if (vehiculo instanceof VCarrera) {
             tipo = vehiculo + " es un vehiculo de carga";
+        } else if (vehiculo instanceof VCarrera) {
+            tipo = vehiculo + " es un vehiculo de carreras";
         }
         return tipo;
     }
@@ -104,13 +104,14 @@ public class Principal {
         boolean salir = false;
         while (!salir) {
             System.out.println(ToolMR.margenes(10) + "ACCIONES CON VEHICULOS" + ToolMR.margenes(10));
-            System.out.println("1) Girar izquierda \n2) Girar derecha \n3) Llenar tanque \n4) Acelerar");
+            System.out.println("1) Girar izquierda \n2) Girar derecha \n3) Llenar tanque \n4) Acelerar \n5) Volver");
             int opcion = ToolMR.getEntero("una opción");
             switch (opcion) {
                 case 1 -> {vehiculo.girarIzquierda();}
                 case 2 -> {vehiculo.girarDerecha();}
                 case 3 -> {vehiculo.llenarTanque();}
                 case 4 -> {vehiculo.acelerar();}
+                case 5 -> {salir = true;}
                 default -> {System.out.println("\nUps, esa opción no esta disponible :c\n");}
 
             }
