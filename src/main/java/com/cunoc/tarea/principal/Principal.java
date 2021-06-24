@@ -82,7 +82,7 @@ public class Principal {
         if (vehiculo instanceof VCamioneta) {
             tipo = vehiculo + " es una camioneta";
         } else if (vehiculo instanceof VCarga) {
-            tipo = vehiculo + " es un vehiculo de carga";
+            tipo = vehiculo + " es un vehiculo de carreras";
         } else if (vehiculo instanceof VCarrera) {
             tipo = vehiculo + " es un vehiculo de carga";
         }
