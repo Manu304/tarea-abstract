@@ -20,7 +20,7 @@ public abstract class Vehiculo implements Giro{
         this.cantPasajeros = ToolMR.aleatorio(1, 5);
         this.velocidadMax = ToolMR.aleatorio(40, 80);
         this.aceleracionBase = ToolMR.aleatorio(0, 100);
-        this.id = ToolMR.aleatorio(10, 99);
+        this.id = ToolMR.aleatorio(100, 999);
     }
 
     public abstract void acelerar();

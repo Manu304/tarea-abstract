@@ -6,7 +6,7 @@ import com.cunoc.tarea.vehiculos.Combustible;
 public class Ferrari extends Vehiculo implements VCarrera {
 
     public Ferrari() {
-        super(Combustible.GASOLINA, "Ferrari2021");
+        super(Combustible.GASOLINA, "Ferrari F-");
     }
 
     @Override

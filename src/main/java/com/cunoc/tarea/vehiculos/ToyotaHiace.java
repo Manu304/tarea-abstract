@@ -6,7 +6,7 @@ public class ToyotaHiace extends Vehiculo implements VCamioneta{
     
 
     public ToyotaHiace() {
-        super(Combustible.REGULAR, "Toyota Hiace");
+        super(Combustible.REGULAR, "Toyota Hiace H-");
     }
 
     @Override
